@@ -1,0 +1,114 @@
+1. Создать внешний репозиторий c названием JSON:
+GitHub ➡️ New repository ➡️ Create repository 
+
+2. Клонировать репозиторий JSON на локальный компьютер:
+git clone < HTTPS key>
+
+3. Внутри локального JSON создать файл “new.json”:
+cd json/
+cat > new.json
+
+4. Добавить файл под гит:
+git add new.json 
+or git add .
+
+5. Закоммитить файл:
+git commit -m "commit message"
+
+6. Отправить файл на внешний GitHub репозиторий:
+git push
+
+7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
+
+nano new.json
+
+{
+    "name": "Natallia",
+    "surname": "Asievskaya",
+    "age": 37,
+    "pets": 2,
+    "desired_salary": 100000
+}
+
+Ctrl+X потом Y потом Enter
+
+8. Отправить изменения на внешний репозиторий:
+git add .
+git commit -m "commit message"
+git push
+
+9. Создать файл preferences.json:
+cat > preferences.json
+
+10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
+nano preferences.json
+{
+    "favorite_movie": "Lion",
+    "favorite_TVshow": "Sex In The Sity",
+    "favorite_food": "Chocolate",
+    "favorite_season": "Summer",
+    "country_to_visit": "India"
+}
+Ctrl+X потом Y потом Enter
+
+11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON:
+ 
+ touch skills.json
+ 
+ nano skills.json
+ 
+ {
+    "skill_1": "QA_Theory",
+    "skill_2": "HTTP",
+    "skill_3": "GIT",
+    "skill_4": "Postman",
+    "skill_5": "Charles",
+    "skill_6": "DevTools",
+    "skill_7": "VPN",
+    "skill_8": "Android_Studio",
+    "skill_9": "Xcode",
+    "skill_10": "Terminal",
+    "skill_11": "SQL"
+}
+
+Ctrl+X потом Y потом Enter
+
+12. Отправить сразу 2 файла на внешний репозиторий:
+git add .
+git commit -m "commit message"
+git push
+
+13. На веб интерфейсе создать файл bug_report.json:
+➡️ Add file ➡️ Create new file
+
+14. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+➡️ Commit new file
+
+15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
+{
+    "ID": "01",
+    "Title": "No notification, in the authorization form, about the successful registration of a new user",
+    "STR": 
+    {
+        "1. Go to the main page of the site (link)",
+        "2. Enter data in the  \"Login\" field",
+        "3. Enter data in the \"Password\" field",
+        "4. Press \"Register\""
+    },
+    "Environment":
+    {
+        "OS": "iOS 16.2 iPhone 12 Pro",
+        "Browser": "Safari 16.2"
+    },
+    "Actual result": "A message appears, about successful registration",
+    "Expected result": "A user has no understanding of the registration result",
+    "Severity": "Minor",
+    "Priority": "Low",
+    "Attachments": "Link to the image or video with the bug"
+}
+
+16. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+➡️ Commit changes 
+
+17. Синхронизировать внешний и локальный репозиторий JSON:
+git pull
