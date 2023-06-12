@@ -1,21 +1,29 @@
 1. Создать внешний репозиторий c названием JSON:
+
 GitHub ➡️ New repository ➡️ Create repository 
 
 2. Клонировать репозиторий JSON на локальный компьютер:
+
 git clone < HTTPS key>
 
 3. Внутри локального JSON создать файл “new.json”:
+
 cd json/
+
 cat > new.json
 
 4. Добавить файл под гит:
+
 git add new.json 
+
 or git add .
 
 5. Закоммитить файл:
+
 git commit -m "commit message"
 
 6. Отправить файл на внешний GitHub репозиторий:
+
 git push
 
 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON:
@@ -33,14 +41,19 @@ nano new.json
 Ctrl+X потом Y потом Enter
 
 8. Отправить изменения на внешний репозиторий:
+
 git add .
+
 git commit -m "commit message"
+
 git push
 
 9. Создать файл preferences.json:
+
 cat > preferences.json
 
 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON:
+
 nano preferences.json
 {
     "favorite_movie": "Lion",
@@ -74,17 +87,21 @@ Ctrl+X потом Y потом Enter
 Ctrl+X потом Y потом Enter
 
 12. Отправить сразу 2 файла на внешний репозиторий:
+
 git add .
 git commit -m "commit message"
 git push
 
 13. На веб интерфейсе создать файл bug_report.json:
+
 ➡️ Add file ➡️ Create new file
 
 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+
 ➡️ Commit new file
 
 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON:
+
 {
     "ID": "01",
     "Title": "No notification, in the authorization form, about the successful registration of a new user",
@@ -108,7 +125,9 @@ git push
 }
 
 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+
 ➡️ Commit changes 
 
 17. Синхронизировать внешний и локальный репозиторий JSON:
+
 git pull
