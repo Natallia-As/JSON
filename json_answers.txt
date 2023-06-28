@@ -111,8 +111,8 @@ Edit bug_report.json
     },
     "Environment":
     {
-        "OS": "iOS 16.2 iPhone 12 Pro",
-        "Browser": "Safari 16.2"
+        "OS": "Dell Inspiron 5010",
+        "Browser": "Chrome"
     },
     "Actual result": "A message appears, about successful registration",
     "Expected result": "A user has no understanding of the registration result",
